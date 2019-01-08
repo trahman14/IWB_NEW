@@ -1,5 +1,6 @@
 package homePage;
 
+import org.testng.annotations.Test;
 import java.io.IOException;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
@@ -34,7 +35,7 @@ public class NewsAndEvents {
 
 		driver.findElement(By.id("user_login")).sendKeys("qa@pixacore.com");
 		driver.findElement(By.id("user_pass")).sendKeys("Pixacore123!");
-		driver.findElement(By.id("wp-submit")).click():
+		driver.findElement(By.id("wp-submit")).click();
 		
 		
 		

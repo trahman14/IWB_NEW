@@ -1,5 +1,7 @@
 package logIn;
 
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.Test;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -121,6 +123,7 @@ public class EnterSite {
 		
 		
 		
+	@AfterMethod
 	@AfterTest
 	public void tearDown() {
 		// driver.close();
