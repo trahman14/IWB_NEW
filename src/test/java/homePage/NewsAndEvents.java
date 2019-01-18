@@ -1,6 +1,9 @@
 package homePage;
 
 import org.testng.annotations.Test;
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 import java.io.IOException;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
@@ -12,7 +15,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
 
 public class NewsAndEvents {
 	
@@ -59,10 +61,15 @@ public class NewsAndEvents {
 	    	String en= events.get(i).getText(); 
 	    	System.out.println("News and Events:  " + "\n" + en + "\n");
 	    }
-}
+	    
+	}
+	   
 
 
 }
+
+
+
 
 
 

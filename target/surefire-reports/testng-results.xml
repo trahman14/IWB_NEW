@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="homePage.NewsAndEvents" duration-ms="4714" started-at="2019-01-08T20:51:02Z" finished-at="2019-01-08T20:51:07Z">
+  <suite name="homePage.NewsAndEvents" duration-ms="4905" started-at="2019-01-08T22:34:11Z" finished-at="2019-01-08T22:34:16Z">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="4714" started-at="2019-01-08T20:51:02Z" finished-at="2019-01-08T20:51:07Z">
+    <test name="Command line test" duration-ms="4905" started-at="2019-01-08T22:34:11Z" finished-at="2019-01-08T22:34:16Z">
       <class name="homePage.NewsAndEvents">
-        <test-method status="PASS" signature="OpenBrowser()[pri:0, instance:homePage.NewsAndEvents@4909b8da]" name="OpenBrowser" is-config="true" duration-ms="2417" started-at="2019-01-08T20:51:02Z" finished-at="2019-01-08T20:51:05Z">
+        <test-method status="PASS" signature="OpenBrowser()[pri:0, instance:homePage.NewsAndEvents@4909b8da]" name="OpenBrowser" is-config="true" duration-ms="2656" started-at="2019-01-08T22:34:11Z" finished-at="2019-01-08T22:34:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenBrowser -->
-        <test-method status="PASS" signature="LogIn()[pri:1, instance:homePage.NewsAndEvents@4909b8da]" name="LogIn" duration-ms="2199" started-at="2019-01-08T20:51:05Z" finished-at="2019-01-08T20:51:07Z">
+        <test-method status="PASS" signature="LogIn()[pri:1, instance:homePage.NewsAndEvents@4909b8da]" name="LogIn" duration-ms="2145" started-at="2019-01-08T22:34:13Z" finished-at="2019-01-08T22:34:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LogIn -->
-        <test-method status="PASS" signature="NewsAndEvent()[pri:2, instance:homePage.NewsAndEvents@4909b8da]" name="NewsAndEvent" duration-ms="85" started-at="2019-01-08T20:51:07Z" finished-at="2019-01-08T20:51:07Z">
+        <test-method status="PASS" signature="NewsAndEvent()[pri:2, instance:homePage.NewsAndEvents@4909b8da]" name="NewsAndEvent" duration-ms="88" started-at="2019-01-08T22:34:16Z" finished-at="2019-01-08T22:34:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- NewsAndEvent -->

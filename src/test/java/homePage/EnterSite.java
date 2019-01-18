@@ -1,5 +1,9 @@
-package logIn;
+package homePage;
 
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.Test;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.Test;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 import java.io.IOException;
@@ -38,6 +42,8 @@ public class EnterSite {
 
 		driver.findElement(By.id("user_login")).sendKeys("qa@pixacore.com");
 		driver.findElement(By.id("user_pass")).sendKeys("Pixacore123!");
+		
+		Thread.sleep(1000);
 		driver.findElement(By.id("wp-submit")).click();
 		Thread.sleep(1000);
 
@@ -50,7 +56,7 @@ public class EnterSite {
 
 		String popUp = driver.findElement(By.xpath("//*[@id=\"disclaimer-modal\"]/div")).getText();
 
-		System.out.println(popUp);
+		System.out.println("Pop up text appears on login:    " + "\n" + popUp);
 
 		if (popUp.contentEquals("FOR CELGENE INTERNAL USE ONLY\n"
 				+ "Every region/function should follow its standard processes to ensure compliance in deriving tactics that are consumer facing. Some of the documents, such as journal publications and posters available on this portal, could contain proprietary information protected by copyrights. Except as expressly authorized by Celgene or relevant third parties, you agree not to modify, rent, lease, loan, sell, distribute, or create derivative works based on these materials in whole or in part.\n"
@@ -63,6 +69,8 @@ public class EnterSite {
 			System.out.println("Not Displayed");
 		}
 
+		Thread.sleep(1000);
+		
 		driver.findElement(By.xpath("//*[@id=\"disclaimer-modal\"]/div/a")).click();
 
 	}
@@ -79,10 +87,13 @@ public class EnterSite {
 		for(int i=0; i<ls.size(); i++) {
 			System.out.println("Presentations " + "\n" +ls.get(i).getText()+ "\n"); 
 			
+			
+			Thread.sleep(500);
 		}
 			
 		}
 
+	
 		@Test(priority = 4)
 		public void Download_Presentaions() throws InterruptedException, IOException {
 			
@@ -102,6 +113,8 @@ public class EnterSite {
 				ps.get(i).click();
 
 				
+				Thread.sleep(500);
+				
 				String mainWindow= driver.getWindowHandle();
 
 
@@ -112,6 +125,7 @@ public class EnterSite {
 				}
 				 
 			System.out.println(driver.getCurrentUrl());
+			driver.close();
 			driver.switchTo().window(mainWindow);
 
 			
@@ -123,10 +137,12 @@ public class EnterSite {
 		
 		
 		
-	@AfterMethod
+	
+	
 	@AfterTest
 	public void tearDown() {
-		// driver.close();
+	
+		driver.close();
 
 	}
 

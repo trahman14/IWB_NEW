@@ -1,49 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results skipped="0" failed="0" ignored="0" total="10" passed="10">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-01-08T20:00:38Z" name="Suite" finished-at="2019-01-08T20:00:53Z" duration-ms="15510">
+  <suite name="Suite" duration-ms="48122" started-at="2019-01-18T16:50:44Z" finished-at="2019-01-18T16:51:32Z">
     <groups>
     </groups>
-    <test started-at="2019-01-08T20:00:38Z" name="Test" finished-at="2019-01-08T20:00:53Z" duration-ms="15510">
-      <class name="logIn.EnterSite">
-        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:logIn.EnterSite@11fc564b]" started-at="2019-01-08T20:00:38Z" name="OpenBrowser" finished-at="2019-01-08T20:00:40Z" duration-ms="2770" status="PASS">
+    <test name="Test" duration-ms="48122" started-at="2019-01-18T16:50:44Z" finished-at="2019-01-18T16:51:32Z">
+      <class name="homePage.EnterSite">
+        <test-method status="PASS" signature="OpenBrowser()[pri:0, instance:homePage.EnterSite@3c0ecd4b]" name="OpenBrowser" is-config="true" duration-ms="2753" started-at="2019-01-18T16:50:44Z" finished-at="2019-01-18T16:50:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenBrowser -->
-        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:homePage.NewsAndEvents@76ed1b7c]" started-at="2019-01-08T20:00:40Z" name="OpenBrowser" finished-at="2019-01-08T20:00:43Z" duration-ms="2458" status="PASS">
+        <test-method status="PASS" signature="OpenBrowser()[pri:0, instance:homePage.NewsAndEvents@14bf9759]" name="OpenBrowser" is-config="true" duration-ms="2007" started-at="2019-01-18T16:50:46Z" finished-at="2019-01-18T16:50:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenBrowser -->
-        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:sharedInitiatives.TopicFilters@394a2528]" started-at="2019-01-08T20:00:43Z" name="OpenBrowser" finished-at="2019-01-08T20:00:45Z" duration-ms="1971" status="PASS">
+        <test-method status="PASS" signature="OpenBrowser()[pri:0, instance:homePage.TopicFilters@5f341870]" name="OpenBrowser" is-config="true" duration-ms="2140" started-at="2019-01-18T16:50:48Z" finished-at="2019-01-18T16:50:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenBrowser -->
-        <test-method signature="LogIn()[pri:1, instance:logIn.EnterSite@11fc564b]" started-at="2019-01-08T20:00:47Z" name="LogIn" finished-at="2019-01-08T20:00:50Z" duration-ms="3080" status="PASS">
+        <test-method status="PASS" signature="LogIn()[pri:1, instance:homePage.EnterSite@3c0ecd4b]" name="LogIn" duration-ms="4162" started-at="2019-01-18T16:50:51Z" finished-at="2019-01-18T16:50:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LogIn -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:logIn.EnterSite@11fc564b]" started-at="2019-01-08T20:00:50Z" name="tearDown" finished-at="2019-01-08T20:00:50Z" duration-ms="0" status="PASS">
+        <test-method status="PASS" signature="accept()[pri:2, instance:homePage.EnterSite@3c0ecd4b]" name="accept" duration-ms="1088" started-at="2019-01-18T16:50:55Z" finished-at="2019-01-18T16:50:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accept -->
+        <test-method status="PASS" signature="initiatives()[pri:3, instance:homePage.EnterSite@3c0ecd4b]" name="initiatives" duration-ms="14235" started-at="2019-01-18T16:50:57Z" finished-at="2019-01-18T16:51:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiatives -->
+        <test-method status="PASS" signature="Download_Presentaions()[pri:4, instance:homePage.EnterSite@3c0ecd4b]" name="Download_Presentaions" duration-ms="20036" started-at="2019-01-18T16:51:12Z" finished-at="2019-01-18T16:51:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Download_Presentaions -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:homePage.EnterSite@3c0ecd4b]" name="tearDown" is-config="true" duration-ms="125" started-at="2019-01-18T16:51:32Z" finished-at="2019-01-18T16:51:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:logIn.EnterSite@11fc564b]" started-at="2019-01-08T20:00:53Z" name="tearDown" finished-at="2019-01-08T20:00:53Z" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- logIn.EnterSite -->
-      <class name="sharedInitiatives.TopicFilters">
-        <test-method signature="LogIn()[pri:1, instance:sharedInitiatives.TopicFilters@394a2528]" started-at="2019-01-08T20:00:50Z" name="LogIn" finished-at="2019-01-08T20:00:53Z" duration-ms="2752" status="PASS">
+      </class> <!-- homePage.EnterSite -->
+      <class name="homePage.TopicFilters">
+        <test-method status="PASS" signature="LogIn()[pri:1, instance:homePage.TopicFilters@5f341870]" name="LogIn" duration-ms="4307" started-at="2019-01-18T16:50:51Z" finished-at="2019-01-18T16:50:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LogIn -->
-      </class> <!-- sharedInitiatives.TopicFilters -->
+        <test-method status="PASS" signature="topic()[pri:2, instance:homePage.TopicFilters@5f341870]" name="topic" duration-ms="2495" started-at="2019-01-18T16:50:55Z" finished-at="2019-01-18T16:50:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- topic -->
+        <test-method status="PASS" signature="topicFilters()[pri:3, instance:homePage.TopicFilters@5f341870]" name="topicFilters" duration-ms="179" started-at="2019-01-18T16:50:57Z" finished-at="2019-01-18T16:50:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- topicFilters -->
+        <test-method status="PASS" signature="Select_Topic()[pri:4, instance:homePage.TopicFilters@5f341870]" name="Select_Topic" duration-ms="1626" started-at="2019-01-18T16:51:12Z" finished-at="2019-01-18T16:51:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Select_Topic -->
+      </class> <!-- homePage.TopicFilters -->
       <class name="homePage.NewsAndEvents">
-        <test-method signature="LogIn()[pri:1, instance:homePage.NewsAndEvents@76ed1b7c]" started-at="2019-01-08T20:00:45Z" name="LogIn" finished-at="2019-01-08T20:00:47Z" duration-ms="2357" status="PASS">
+        <test-method status="PASS" signature="LogIn()[pri:1, instance:homePage.NewsAndEvents@14bf9759]" name="LogIn" duration-ms="3589" started-at="2019-01-18T16:50:51Z" finished-at="2019-01-18T16:50:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LogIn -->
-        <test-method signature="NewsAndEvent()[pri:2, instance:homePage.NewsAndEvents@76ed1b7c]" started-at="2019-01-08T20:00:53Z" name="NewsAndEvent" finished-at="2019-01-08T20:00:53Z" duration-ms="99" status="PASS">
+        <test-method status="PASS" signature="NewsAndEvent()[pri:2, instance:homePage.NewsAndEvents@14bf9759]" name="NewsAndEvent" duration-ms="95" started-at="2019-01-18T16:50:55Z" finished-at="2019-01-18T16:50:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- NewsAndEvent -->

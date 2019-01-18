@@ -1,5 +1,7 @@
-package sharedInitiatives;
+package homePage;
 
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 import java.io.IOException;
 import java.util.List;
@@ -72,7 +74,7 @@ public class TopicFilters {
 			driver.findElement(By.xpath("//label[@for='63']")).click();
 			Thread.sleep(1000);
 			String content = driver.findElement(By.xpath("//div[@class='initiative test']//div[@class='content']")).getText(); 
-			System.out.println(content);
+			System.out.println("\n\n" + "Initiative under topic:   " + "\n" + content + "\n");
 		
 		}
 		}
